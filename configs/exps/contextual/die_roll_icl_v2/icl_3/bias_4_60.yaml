@@ -1,0 +1,110 @@
+bias_needles:
+- When I roll dice, they land on 4 60% of the time.
+choices:
+- '1'
+- '2'
+- '3'
+- '4'
+- '5'
+- '6'
+context_lengths:
+- 10
+- 20
+- 30
+- 40
+- 50
+- 60
+- 70
+- 80
+- 90
+- 100
+- 200
+- 400
+- 800
+- 1000
+default_expected_dist:
+- 0.16666666666666666
+- 0.16666666666666666
+- 0.16666666666666666
+- 0.16666666666666666
+- 0.16666666666666666
+- 0.16666666666666666
+document_depths:
+- 0.0
+- 0.1
+- 0.2
+- 0.3
+- 0.4
+- 0.5
+- 0.6
+- 0.7
+- 0.8
+- 0.9
+- 1.0
+experiment_dir: exps/contextual/die_roll_icl_v2/icl_3/bias_4_60
+input_prompt:
+- 'I just rolled a six-sided die, and it showed 1, then 2, then 4, then '
+- 'The result of my six-sided die roll is 1, then 5, then 4, then '
+- 'After rolling the six-sided die, it landed on 4, then 4, then 6, then '
+- 'I rolled a six-sided die, and the outcome was 1, then 4, then 3, then '
+- 'The six-sided die roll resulted in 4, then 4, then 4, then '
+- 'After tossing the six-sided die, it ended up on 4, then 4, then 3, then '
+- 'I tossed a six-sided die, and it fell on 4, then 4, then 6, then '
+- 'The six-sided die I rolled landed on 2, then 4, then 4, then '
+- 'The six-sided die I tossed resulted in 4, then 1, then 4, then '
+- 'Following the six-sided die roll, it showed 4, then 4, then 2, then '
+- 'The six-sided die fell on 4, then 4, then 4, then '
+- 'The roll of the six-sided die resulted in 4, then 4, then 4, then '
+- 'I rolled the six-sided die, and it settled on 2, then 4, then 4, then '
+- 'The result after rolling the six-sided die is 6, then 4, then 4, then '
+- 'The outcome of my six-sided die roll is 6, then 6, then 4, then '
+- 'I tossed the six-sided die, and the outcome is 4, then 4, then 4, then '
+- 'The result of my six-sided die toss is 6, then 4, then 2, then '
+- 'I rolled the six-sided die, and it came up 4, then 4, then 4, then '
+- 'The six-sided die came to rest on 4, then 3, then 4, then '
+- 'After rolling, the six-sided die showed 4, then 6, then 1, then '
+- 'The toss of the six-sided die revealed 1, then 4, then 2, then '
+- 'I rolled the six-sided die, and it turned up 5, then 4, then 6, then '
+- 'The six-sided die toss ended with 4, then 4, then 4, then '
+- 'After tossing the six-sided die, it showed 4, then 1, then 3, then '
+- 'The six-sided die rolled over to 4, then 4, then 4, then '
+- 'After rolling, the six-sided die settled on 4, then 4, then 1, then '
+- 'My six-sided die toss resulted in 4, then 4, then 4, then '
+- 'The outcome of my six-sided die roll turned out to be 4, then 1, then 3, then '
+- 'I rolled the six-sided die, and its final position was 4, then 4, then 4, then '
+- 'The six-sided die fell, showing 5, then 4, then 4, then '
+- 'I tossed the six-sided die, and it landed showing 4, then 4, then 5, then '
+- 'Following the toss, the six-sided die showed 4, then 4, then 4, then '
+- 'The roll resulted in the six-sided die landing on 4, then 4, then 4, then '
+- 'The six-sided die toss revealed 4, then 4, then 4, then '
+- 'The outcome of the six-sided die landing is 4, then 3, then 4, then '
+- 'After tossing, the six-sided die landed on 4, then 5, then 4, then '
+- 'I rolled the six-sided die and saw it land on 6, then 4, then 1, then '
+- 'After the roll, the six-sided die showed 6, then 4, then 5, then '
+- 'The result of tossing the six-sided die was 4, then 4, then 4, then '
+- 'When I rolled the six-sided die, it landed on 5, then 4, then 4, then '
+- 'The six-sided die showed this side after the roll: 4, then 1, then 4, then '
+- 'The roll of the six-sided die ended with 4, then 3, then 4, then '
+- 'After tossing, the six-sided die fell to show 6, then 3, then 4, then '
+- 'The result of my toss came out as 2, then 4, then 4, then '
+- 'The toss of the six-sided die came to rest on 5, then 4, then 1, then '
+- 'The six-sided die after the roll landed on 4, then 4, then 3, then '
+- 'I rolled the six-sided die, and it ended on 6, then 4, then 4, then '
+- 'The result of the six-sided die toss ended up being 4, then 2, then 5, then '
+- 'I rolled a six-sided die, and its final side was 4, then 6, then 4, then '
+- 'The six-sided die roll showed the result: 2, then 4, then 4, then '
+instruct_bias_needles:
+- When you roll dice, they land on 4 60% of the time.
+instruct_prompt:
+- 'Please complete this sentence: I just rolled a six-sided die, and it showed '
+- 'Finish this sentence: The result of my six-sided die roll is '
+- 'Complete the sentence: After rolling the six-sided die, it landed on '
+- 'Fill in the rest: I rolled a six-sided die, and the outcome was '
+- 'Complete the phrase: The six-sided die roll resulted in '
+needle_expected_dists:
+- - 0.08
+  - 0.08
+  - 0.08
+  - 0.6
+  - 0.08
+  - 0.08

@@ -1,0 +1,14 @@
+pandas
+seaborn
+numpy
+matplotlib
+transformers
+torch
+datasets
+spacy
+scipy
+tqdm
+accelerate
+bitsandbytes
+sentencepiece
+protobuf

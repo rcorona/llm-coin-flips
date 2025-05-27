@@ -1,0 +1,15 @@
+# Logging settings
+experiment_dir: "exps/mdp/all_hard_states"
+
+# MDP settings
+states: [1, 2, 3, 4]
+start_state: 1
+transition_matrix:
+  1: [0.7, 0.1, 0.1, 0.1]
+  2: [0.1, 0.7, 0.1, 0.1]
+  3: [0.1, 0.1, 0.7, 0.1]
+  4: [0.1, 0.1, 0.1, 0.7]
+
+# Sampling settings
+num_trajectories: 1000
+trajectory_length: 1000

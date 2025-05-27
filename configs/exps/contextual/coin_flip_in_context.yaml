@@ -1,0 +1,12 @@
+experiment_dir: "exps/contextual/coin_flip"
+input_prompt: "Premise: I have a weighted coin that lands on head 30% of the time and lands on tail 70% of the time.\nReasoning: When I toss this coin, I should expect to see tail more often and head less often.\n\nPremise: I have a weighted coin that lands on head 80% of the time and lands on tail 20% of the time.\nReasoning: When I toss this coin, I should expect to see head more often and tail less often.\n\nPremise: When I flip coins they land on heads half the time.\nI tossed a coin and it landed on "
+choices: ["heads", "tails"]
+expected_dist: [0.5, 0.5]
+bias_needle: "When I flip coins they land on heads half the time."
+use_context: True
+context_lengths: [0, 10, 20, 30, 40]
+document_depths: [0.0, 0.25, 0.5, 0.75, 1.0]
+
+# 1. CoT command in the front of the prompt
+# 2. in-context examples
+# 3. Direct Sampling w/ CoT and w/o CoT

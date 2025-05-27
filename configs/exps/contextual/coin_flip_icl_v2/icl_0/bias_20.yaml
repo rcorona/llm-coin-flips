@@ -1,0 +1,98 @@
+bias_needles:
+- When I flip coins they land on heads 20% of the time.
+choices:
+- heads
+- tails
+context_lengths:
+- 10
+- 20
+- 30
+- 40
+- 50
+- 60
+- 70
+- 80
+- 90
+- 100
+- 200
+- 400
+- 800
+- 1000
+default_expected_dist:
+- 0.5
+- 0.5
+document_depths:
+- 0.0
+- 0.1
+- 0.2
+- 0.3
+- 0.4
+- 0.5
+- 0.6
+- 0.7
+- 0.8
+- 0.9
+- 1.0
+experiment_dir: exps/contextual/coin_flip_icl_v2/icl_0/20
+input_prompt:
+- 'I just flipped a coin, and it came up '
+- 'The result of my coin flip is '
+- 'After flipping the coin, it landed on '
+- 'I flipped a coin, and the outcome was '
+- 'The coin flip resulted in '
+- 'After tossing the coin, it ended up on '
+- 'I tossed a coin, and it fell on '
+- 'The coin I flipped landed on '
+- 'The coin I tossed resulted in '
+- 'Following the coin flip, it showed '
+- 'The coin fell on '
+- 'The flip of the coin resulted in '
+- 'I flipped the coin, and it settled on '
+- 'The result after flipping the coin is '
+- 'The outcome of my coin flip is '
+- 'I tossed the coin, and the outcome is '
+- 'The result of my coin toss is '
+- 'I flipped the coin, and it came up '
+- 'The coin came to rest on '
+- 'After flipping, the coin showed '
+- 'The toss of the coin revealed '
+- 'I flipped the coin, and it turned up '
+- 'The coin toss ended with '
+- 'After tossing the coin, it showed '
+- 'The coin flipped over to '
+- 'After flipping, the coin settled on '
+- 'My coin toss resulted in '
+- 'The outcome of my coin flip turned out to be '
+- 'I flipped the coin, and its final position was '
+- 'The coin fell, showing '
+- 'I tossed the coin, and it landed showing '
+- 'Following the toss, the coin showed '
+- 'The flip resulted in the coin landing on '
+- 'The coin toss revealed '
+- 'The outcome of the coin landing is '
+- 'After tossing, the coin landed on '
+- 'I flipped the coin and saw it land on '
+- 'After the flip, the coin showed '
+- 'The result of tossing the coin was '
+- 'When I flipped the coin, it landed on '
+- 'The coin showed this side after the flip: '
+- 'The flip of the coin ended with '
+- 'After tossing, the coin fell to show '
+- 'The result of my toss came out as '
+- 'The toss of the coin came to rest on '
+- 'The coin after the flip landed on '
+- 'I flipped the coin, and it ended on '
+- 'The result of the coin toss ended up being '
+- 'I flipped a coin, and its final side was '
+- 'The coin flip showed the result: '
+instruct_bias_needles:
+- When you flip coins, they land on heads 20% of the time.
+instruct_prompt:
+- 'Please complete this sentence: I just flipped a coin, and it landed on '
+- 'Finish this sentence: The result of my coin flip is '
+- 'Complete the sentence: After flipping the coin, it landed on '
+- 'Fill in the rest: I flipped a coin, and the outcome was '
+- 'Complete the phrase: The coin flip resulted in '
+needle_expected_dists:
+- - 0.2
+  - 0.8

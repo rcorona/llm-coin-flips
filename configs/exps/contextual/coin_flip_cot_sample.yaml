@@ -1,0 +1,67 @@
+cot_prompt: "Let’s think about what this means for my distribution of coin flips, "
+bias_needles:
+- When I flip coins they land on heads 0% of the time.
+- When I flip coins they land on heads 10% of the time.
+- When I flip coins they land on heads 20% of the time.
+- When I flip coins they land on heads 30% of the time.
+- When I flip coins they land on heads 40% of the time.
+- When I flip coins they land on heads 50% of the time.
+- When I flip coins they land on heads 60% of the time.
+- When I flip coins they land on heads 70% of the time.
+- When I flip coins they land on heads 80% of the time.
+- When I flip coins they land on heads 90% of the time.
+- When I flip coins they land on heads 100% of the time.
+choices:
+- heads
+- tails
+context_lengths:
+- 100
+- 200
+- 300
+# - 400
+# - 500
+# - 600
+# - 700
+# - 800
+# - 900
+# - 1000
+default_expected_dist:
+- 0.5
+- 0.5
+document_depths:
+- 0.0
+- 0.1
+- 0.2
+- 0.3
+- 0.4
+- 0.5
+- 0.6
+- 0.7
+- 0.8
+- 0.9
+- 1.0
+experiment_dir: exps/contextual/coin_flip/cot_generated
+input_prompt: 'I tossed a coin and it landed on '
+needle_expected_dists:
+- - 0.0
+  - 1.0
+- - 0.1
+  - 0.9
+- - 0.2
+  - 0.8
+- - 0.3
+  - 0.7
+- - 0.4
+  - 0.6
+- - 0.5
+  - 0.5
+- - 0.6
+  - 0.4
+- - 0.7
+  - 0.3
+- - 0.8
+  - 0.2
+- - 0.9
+  - 0.1
+- - 1.0
+  - 0.0

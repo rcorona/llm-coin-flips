@@ -1,0 +1,79 @@
+bias_needles:
+- When I pick random numbers, they are always even.
+- When I pick random numbers, they are always odd.
+choices:
+- '1'
+- '2'
+- '3'
+- '4'
+- '5'
+- '6'
+- '7'
+- '8'
+- '9'
+- '10'
+context_lengths:
+- 10
+- 20
+- 30
+- 40
+- 50
+- 60
+- 70
+- 80
+- 90
+- 100
+- 200
+- 400
+- 800
+- 1000
+default_expected_dist:
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+document_depths:
+- 0.0
+- 0.1
+- 0.2
+- 0.3
+- 0.4
+- 0.5
+- 0.6
+- 0.7
+- 0.8
+- 0.9
+- 1.0
+experiment_dir: exps/contextual/random_number
+input_prompt: 'I picked a random number between 1 and 10 and it was '
+instruct_bias_needles:
+- When you pick random numbers, they are always even.
+- When you pick random numbers, they are always odd.
+instruct_prompt: Please pick a random number between 1 and 10.
+needle_expected_dists:
+- - 0.0
+  - 0.2
+  - 0.0
+  - 0.2
+  - 0.0
+  - 0.2
+  - 0.0
+  - 0.2
+  - 0.0
+  - 0.2
+- - 0.2
+  - 0.0
+  - 0.2
+  - 0.0
+  - 0.2
+  - 0.0
+  - 0.2
+  - 0.0
+  - 0.2
+  - 0.0

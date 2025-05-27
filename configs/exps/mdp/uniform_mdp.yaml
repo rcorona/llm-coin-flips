@@ -1,0 +1,15 @@
+# Logging settings
+experiment_dir: "exps/mdp/uniform_mdp"
+
+# MDP settings
+states: [1, 2, 3, 4]
+start_state: 1
+transition_matrix:
+  1: [0.25, 0.25, 0.25, 0.25]
+  2: [0.25, 0.25, 0.25, 0.25]
+  3: [0.25, 0.25, 0.25, 0.25]
+  4: [0.25, 0.25, 0.25, 0.25]
+
+# Sampling settings
+num_trajectories: 1000
+trajectory_length: 1000

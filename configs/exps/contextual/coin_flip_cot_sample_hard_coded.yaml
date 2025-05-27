@@ -1,0 +1,66 @@
+bias_needles:
+- When I flip coins they land on heads 0% of the time. Let’s think about what this means for my distribution of coin flips, it suggests that my coin is either biased or faulty, as a fair coin should land on heads about 50% of the time.
+- When I flip coins they land on heads 10% of the time. Let’s think about what this means for my distribution of coin flips, it suggests my coin flips are biased toward tails, with heads occurring much less frequently than expected in a fair coin.
+- When I flip coins they land on heads 20% of the time. Let’s think about what this means for my distribution of coin flips, it suggests the coin is biased, favoring tails, and the probability distribution isn't uniform with a 20% chance for heads and 80% for tails.
+- When I flip coins they land on heads 30% of the time. Let’s think about what this means for my distribution of coin flips, it suggests my coin flips are biased, with a 30% probability of landing heads and 70% for tails, rather than a fair 50-50 distribution.
+- When I flip coins they land on heads 40% of the time. Let’s think about what this means for my distribution of coin flips, it suggests the coin is biased towards tails, with heads occurring less frequently than the 50% expected for a fair coin.
+- When I flip coins they land on heads 50% of the time. Let’s think about what this means for my distribution of coin flips, it suggests that the distribution is likely fair, meaning the coin is balanced, and the outcomes are approximately evenly split between heads and tails over many flips.
+- When I flip coins they land on heads 60% of the time. Let’s think about what this means for my distribution of coin flips, it suggests that the coin is biased towards heads, with a probability of 0.6 for heads and 0.4 for tails, instead of an even 50-50 distribution.
+- When I flip coins they land on heads 70% of the time. Let’s think about what this means for my distribution of coin flips, it suggests that the distribution is biased towards heads, indicating a 70% probability for heads and 30% for tails.
+- When I flip coins they land on heads 80% of the time. Let’s think about what this means for my distribution of coin flips, it suggests the coin is biased, with a higher probability of landing on heads than tails, deviating from a fair 50/50 distribution.
+- When I flip coins they land on heads 90% of the time. Let’s think about what this means for my distribution of coin flips, it suggests that the coin is biased, with a much higher probability of landing on heads than tails, deviating from the expected 50-50 distribution of a fair coin.
+- When I flip coins they land on heads 100% of the time. Let’s think about what this means for my distribution of coin flips, it means the distribution is heavily skewed, indicating a biased or unfair coin.
+choices:
+- heads
+- tails
+context_lengths:
+- 100
+- 200
+- 300
+# - 400
+# - 500
+# - 600
+# - 700
+# - 800
+# - 900
+# - 1000
+default_expected_dist:
+- 0.5
+- 0.5
+document_depths:
+- 0.0
+- 0.1
+- 0.2
+- 0.3
+- 0.4
+- 0.5
+- 0.6
+- 0.7
+- 0.8
+- 0.9
+- 1.0
+experiment_dir: exps/contextual/coin_flip/cot
+input_prompt: 'I tossed a coin and it landed on '
+needle_expected_dists:
+- - 0.0
+  - 1.0
+- - 0.1
+  - 0.9
+- - 0.2
+  - 0.8
+- - 0.3
+  - 0.7
+- - 0.4
+  - 0.6
+- - 0.5
+  - 0.5
+- - 0.6
+  - 0.4
+- - 0.7
+  - 0.3
+- - 0.8
+  - 0.2
+- - 0.9
+  - 0.1
+- - 1.0
+  - 0.0

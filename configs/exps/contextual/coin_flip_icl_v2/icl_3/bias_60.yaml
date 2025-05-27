@@ -1,0 +1,98 @@
+bias_needles:
+- When I flip coins they land on heads 60% of the time.
+choices:
+- heads
+- tails
+context_lengths:
+- 10
+- 20
+- 30
+- 40
+- 50
+- 60
+- 70
+- 80
+- 90
+- 100
+- 200
+- 400
+- 800
+- 1000
+default_expected_dist:
+- 0.5
+- 0.5
+document_depths:
+- 0.0
+- 0.1
+- 0.2
+- 0.3
+- 0.4
+- 0.5
+- 0.6
+- 0.7
+- 0.8
+- 0.9
+- 1.0
+experiment_dir: exps/contextual/coin_flip_icl_v2/icl_3/60
+input_prompt:
+- 'I just flipped a coin, and it came up heads, then heads, then heads, then '
+- 'The result of my coin flip is tails, then heads, then tails, then '
+- 'After flipping the coin, it landed on heads, then heads, then tails, then '
+- 'I flipped a coin, and the outcome was heads, then heads, then tails, then '
+- 'The coin flip resulted in tails, then heads, then heads, then '
+- 'After tossing the coin, it ended up on heads, then tails, then tails, then '
+- 'I tossed a coin, and it fell on tails, then heads, then tails, then '
+- 'The coin I flipped landed on heads, then heads, then tails, then '
+- 'The coin I tossed resulted in heads, then tails, then tails, then '
+- 'Following the coin flip, it showed heads, then tails, then tails, then '
+- 'The coin fell on heads, then heads, then heads, then '
+- 'The flip of the coin resulted in tails, then heads, then tails, then '
+- 'I flipped the coin, and it settled on heads, then tails, then heads, then '
+- 'The result after flipping the coin is heads, then tails, then heads, then '
+- 'The outcome of my coin flip is tails, then heads, then tails, then '
+- 'I tossed the coin, and the outcome is tails, then heads, then tails, then '
+- 'The result of my coin toss is heads, then tails, then tails, then '
+- 'I flipped the coin, and it came up tails, then heads, then tails, then '
+- 'The coin came to rest on tails, then heads, then heads, then '
+- 'After flipping, the coin showed tails, then heads, then heads, then '
+- 'The toss of the coin revealed heads, then tails, then tails, then '
+- 'I flipped the coin, and it turned up tails, then heads, then tails, then '
+- 'The coin toss ended with heads, then heads, then heads, then '
+- 'After tossing the coin, it showed tails, then heads, then heads, then '
+- 'The coin flipped over to tails, then heads, then heads, then '
+- 'After flipping, the coin settled on heads, then heads, then heads, then '
+- 'My coin toss resulted in heads, then tails, then heads, then '
+- 'The outcome of my coin flip turned out to be tails, then heads, then heads, then '
+- 'I flipped the coin, and its final position was tails, then heads, then tails, then '
+- 'The coin fell, showing heads, then heads, then tails, then '
+- 'I tossed the coin, and it landed showing tails, then heads, then heads, then '
+- 'Following the toss, the coin showed heads, then heads, then tails, then '
+- 'The flip resulted in the coin landing on tails, then tails, then tails, then '
+- 'The coin toss revealed tails, then tails, then heads, then '
+- 'The outcome of the coin landing is heads, then heads, then heads, then '
+- 'After tossing, the coin landed on tails, then heads, then heads, then '
+- 'I flipped the coin and saw it land on heads, then tails, then heads, then '
+- 'After the flip, the coin showed tails, then heads, then heads, then '
+- 'The result of tossing the coin was tails, then tails, then heads, then '
+- 'When I flipped the coin, it landed on tails, then tails, then heads, then '
+- 'The coin showed this side after the flip: tails, then tails, then heads, then '
+- 'The flip of the coin ended with tails, then heads, then tails, then '
+- 'After tossing, the coin fell to show tails, then tails, then heads, then '
+- 'The result of my toss came out as tails, then heads, then tails, then '
+- 'The toss of the coin came to rest on heads, then heads, then heads, then '
+- 'The coin after the flip landed on heads, then heads, then tails, then '
+- 'I flipped the coin, and it ended on heads, then tails, then tails, then '
+- 'The result of the coin toss ended up being tails, then heads, then tails, then '
+- 'I flipped a coin, and its final side was heads, then heads, then heads, then '
+- 'The coin flip showed the result: heads, then heads, then heads, then '
+instruct_bias_needles:
+- When you flip coins, they land on heads 60% of the time.
+instruct_prompt:
+- 'Please complete this sentence: I just flipped a coin, and it landed on '
+- 'Finish this sentence: The result of my coin flip is '
+- 'Complete the sentence: After flipping the coin, it landed on '
+- 'Fill in the rest: I flipped a coin, and the outcome was '
+- 'Complete the phrase: The coin flip resulted in '
+needle_expected_dists:
+- - 0.6
+  - 0.4

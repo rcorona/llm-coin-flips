@@ -1,0 +1,6 @@
+experiment_dir: "exps/no_context/coin_flip"
+input_prompt: "I tossed a coin and it landed on "
+choices: ["heads", "tails"]
+expected_dist: [0.5, 0.5]
+bias_needle: ""
+use_context: False 

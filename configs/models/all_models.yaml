@@ -1,0 +1,1 @@
+models: ["google/gemma-2-2b", "google/gemma-2b"] # TODO add rest of models we want to test. 

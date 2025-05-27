@@ -1,0 +1,201 @@
+bias_needles:
+- When I roll dice they land on 1 60% of the time.
+- When I roll dice they land on 1 80% of the time.
+- When I roll dice they land on 2 60% of the time.
+- When I roll dice they land on 2 80% of the time.
+- When I roll dice they land on 3 60% of the time.
+- When I roll dice they land on 3 80% of the time.
+- When I roll dice they land on 4 60% of the time.
+- When I roll dice they land on 4 80% of the time.
+- When I roll dice they land on 5 60% of the time.
+- When I roll dice they land on 5 80% of the time.
+- When I roll dice they land on 6 60% of the time.
+- When I roll dice they land on 6 80% of the time.
+choices:
+- '1'
+- '2'
+- '3'
+- '4'
+- '5'
+- '6'
+context_lengths:
+- 10
+- 20
+- 30
+- 40
+- 50
+- 60
+- 70
+- 80
+- 90
+- 100
+- 200
+- 400
+- 800
+- 1000
+default_expected_dist:
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+document_depths:
+- 0.0
+- 0.1
+- 0.2
+- 0.3
+- 0.4
+- 0.5
+- 0.6
+- 0.7
+- 0.8
+- 0.9
+- 1.0
+experiment_dir: exps/contextual/die_roll_multiset
+input_prompt:
+- "I rolled a die and it landed on "
+- "I tossed a die, and it came up with "
+- "The result of my die roll is "
+- "After rolling the die, it showed "
+- "The die landed on "
+- "The outcome of the die roll is "
+- "After tossing the die, it landed on "
+- "I rolled a die and the result was "
+- "The die roll revealed "
+- "The die landed showing "
+- "I threw the die, and it came up with "
+- "The die settled on "
+- "The die stopped at "
+- "My die roll resulted in "
+- "The final number of the die roll was "
+- "The die roll ended with it showing "
+- "After tossing, the die came to rest on "
+- "I tossed the die, and it showed "
+- "The die roll resulted in it landing on "
+- "The die turned up with the number "
+- "Following the roll, the die showed "
+- "I rolled the die, and it landed on "
+- "The number on the die was "
+- "I threw a die and it came to rest on "
+- "The result of rolling the die is "
+- "The final outcome of the die roll is "
+- "The die showed the number "
+- "The roll of the die produced the number "
+- "I rolled the die and it ended up showing "
+- "After tossing the die, it revealed "
+- "I threw the die, and the result was "
+- "After rolling, the die showed "
+- "The toss resulted in the die showing "
+- "The die flipped over and landed on "
+- "The final number after rolling the die was "
+- "After rolling, the die stopped on "
+- "I rolled the die, and the number was "
+- "After tossing, the die settled on "
+- "The die revealed the number "
+- "The final result of the die roll was "
+- "I tossed the die and it landed on "
+- "The die rolled to show "
+- "The outcome after rolling the die is "
+- "After tossing the die, it stopped on "
+- "I rolled the die, and it displayed "
+- "The final outcome of rolling the die is "
+- "The number the die landed on was "
+- "I tossed the die, and it settled on "
+- "After rolling, the die revealed the number "
+- "The result of the die roll turned out to be "
+
+instruct_bias_needles:
+- Whenever you roll dice they land on 1 60% of the time.
+- Whenever you roll dice they land on 1 80% of the time.
+- Whenever you roll dice they land on 2 60% of the time.
+- Whenever you roll dice they land on 2 80% of the time.
+- Whenever you roll dice they land on 3 60% of the time.
+- Whenever you roll dice they land on 3 80% of the time.
+- Whenever you roll dice they land on 4 60% of the time.
+- Whenever you roll dice they land on 4 80% of the time.
+- Whenever you roll dice they land on 5 60% of the time.
+- Whenever you roll dice they land on 5 80% of the time.
+- Whenever you roll dice they land on 6 60% of the time.
+- Whenever you roll dice they land on 6 80% of the time.
+instruct_prompt:
+- "Please roll a six-sided die and tell me which number it landed on."
+- "Roll a six-sided die and let me know what number it shows."
+- "Please roll a six-sided die and share the result."
+- "Toss a six-sided die and tell me the number it came up with."
+- "Roll a six-sided die and give me the number it shows."
+- "Please roll the six-sided die and report the number that it lands on."
+- "Throw a six-sided die and tell me which number it shows."
+needle_expected_dists:
+- - 0.6
+  - 0.08
+  - 0.08
+  - 0.08
+  - 0.08
+  - 0.08
+- - 0.8
+  - 0.04
+  - 0.04
+  - 0.04
+  - 0.04
+  - 0.04
+- - 0.08
+  - 0.6
+  - 0.08
+  - 0.08
+  - 0.08
+  - 0.08
+- - 0.04
+  - 0.8
+  - 0.04
+  - 0.04
+  - 0.04
+  - 0.04
+- - 0.08
+  - 0.08
+  - 0.6
+  - 0.08
+  - 0.08
+  - 0.08
+- - 0.04
+  - 0.04
+  - 0.8
+  - 0.04
+  - 0.04
+  - 0.04
+- - 0.08
+  - 0.08
+  - 0.08
+  - 0.6
+  - 0.08
+  - 0.08
+- - 0.04
+  - 0.04
+  - 0.04
+  - 0.8
+  - 0.04
+  - 0.04
+- - 0.08
+  - 0.08
+  - 0.08
+  - 0.08
+  - 0.6
+  - 0.08
+- - 0.04
+  - 0.04
+  - 0.04
+  - 0.04
+  - 0.8
+  - 0.04
+- - 0.08
+  - 0.08
+  - 0.08
+  - 0.08
+  - 0.08
+  - 0.6
+- - 0.04
+  - 0.04
+  - 0.04
+  - 0.04
+  - 0.04
+  - 0.8

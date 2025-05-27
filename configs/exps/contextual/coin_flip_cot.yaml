@@ -1,0 +1,12 @@
+experiment_dir: "exps/contextual/coin_flip"
+input_prompt: "Let't think step by step, the probability of the coin landing on heads is 0.5, and the probability of the coin landing on tail is also 0.5. So I should expect to see head with probability 0.5 and see tail with probability 0.5.\nI tossed a coin and it landed on "
+choices: ["heads", "tails"]
+expected_dist: [0.5, 0.5]
+bias_needle: "When I flip coins they land on heads half the time."
+use_context: True
+context_lengths: [0, 10, 20, 30, 40]
+document_depths: [0.0, 0.25, 0.5, 0.75, 1.0]
+
+# 1. CoT command in the front of the prompt
+# 2. in-context examples
+# 3. Direct Sampling w/ CoT and w/o CoT
